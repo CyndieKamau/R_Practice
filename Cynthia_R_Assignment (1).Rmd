@@ -53,8 +53,7 @@ output: html_document
 
 ## Challenge 3: Use group_by(), mutate(), summarize(), mean(), sd(), min(), max() to calculate the mean, sd, find maximum and minimum of a new column of variable called SPlength where the Sepal.Length is divided by Petal.Length
 
-    `sp_length <- iris
-    %>% group_by(Species) %>% mutate(SPlength = Sepal.Length/Petal.Length) %>% summarise(mean_SPlength = mean(SPlength), sd_SPlength = sd(SPlength), min_SPlength = min(SPlength), max_SPlength = max(SPlength))`
+    `sp_length <- iris %>% group_by(Species) %>% mutate(SPlength = Sepal.Length/Petal.Length) %>% summarise(mean_SPlength = mean(SPlength), sd_SPlength = sd(SPlength), min_SPlength = min(SPlength), max_SPlength = max(SPlength))`
 
 ### *Notes*
 
